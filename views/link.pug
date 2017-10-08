@@ -1,0 +1,7 @@
+extends layout
+block content
+  .main.container
+    .row
+      - var bu = fname.substring(0,fname.lastIndexOf('.'));
+      - var url = '/play/'+fname;
+      a(href=url) #{bu} 

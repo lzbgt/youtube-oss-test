@@ -1,0 +1,19 @@
+
+> myapp@0.0.0 start /root/myapp
+> node ./bin/www
+
+[0mGET / [32m200 [0m375.399 ms - 1180[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.513 ms - -[0m
+[0mGET / [32m200 [0m61.459 ms - 557[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.145 ms - -[0m
+[0mGET / [32m200 [0m47.456 ms - 555[0m
+[0mGET / [32m200 [0m34.262 ms - 555[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.650 ms - -[0m
+[0mGET / [32m200 [0m40.647 ms - 556[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.539 ms - -[0m
+[0mPOST /download [33m404 [0m40.254 ms - 925[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.596 ms - -[0m
+[0mPOST / [33m404 [0m20.808 ms - 925[0m
+[0mPOST /struts2-showcase/integration/saveGangster.action [33m404 [0m21.104 ms - 925[0m
+[0mGET /clusters.jsf [33m404 [0m10.782 ms - 925[0m
+[0mGET /info [33m404 [0m17.572 ms - 925[0m

@@ -1,0 +1,23 @@
+extends layout
+block content
+  .main.container
+    video(id='player', controls, crossorigin='anonymous')
+      //- var url = '/public/videos/'+fname;
+      - var url = 'http://videodc.oss-cn-hangzhou.aliyuncs.com/'+fname;
+      - var bu = url.substring(0,url.lastIndexOf('.'));
+      - var en = bu +'.en.vtt';
+      - var ch = bu + '.zh-Hans.vtt';
+      - var url_enc = encodeURI(url)+'#t=0.1';
+      source(src=url_enc)
+      track(label='English', kind='subtitles', srclang='en', src=en, default)
+      track(label='Chinese', kind='subtitles', srclang='zh-Hans', src=ch)
+     
+    script.
+      var  player = document.getElementById('player');
+      player.addEventListener('error', function(event){
+        var a = event.path?event.path[0].error:null;
+        var b = event.originalTarget ? event.originalTarget.error: null;
+        console.log(event,a, event.message, b);
+      }, true);
+
+

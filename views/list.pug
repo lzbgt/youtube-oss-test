@@ -1,0 +1,8 @@
+extends layout
+block content
+  .main.container
+      each val in files
+        .row
+          - var bu = val.substring(0,val.lastIndexOf('.'));
+          - var url = '/play/'+val;
+          a(href=url) #{bu} 
